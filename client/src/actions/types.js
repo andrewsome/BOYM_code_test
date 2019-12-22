@@ -1,0 +1,2 @@
+export const GET_REPORT = 'GET_REPORT';
+export const UPDATE_SETTINGS = 'UPDATE_SETTINGS';
