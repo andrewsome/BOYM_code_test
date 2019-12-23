@@ -22,13 +22,13 @@ TO DO BETTER (if time availiable)
 1. clone this repo by type `git clone` with url.
 2. `cd` into the folder, there are two folders and a README.
     
-    try run the server first!
+    Try run the server first! Open terminal
 
 3. `cd server` into server. run `npm install` set up environment. 
     to run the server side with nodemon by typing `npm run dev`,
     to run the server side without nodemon by typing `npm start`.
 
-    then run the client.
+    Then run the client. Open another termianl
 
 4. `cd client` into client. run `npm install` set up environment. 
     to run the client side by type `npm start`, 
