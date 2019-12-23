@@ -1,13 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Container from '../../Layout/Container';
 import { Link } from 'react-router-dom';
-import { store } from "../../store/store";
+import { useSelector } from 'react-redux';
 import { getRotatedResult, getRotations } from "../../actions/calculation";
 
-class Report extends Component {
-  render() {
-    const result = getRotatedResult(store.getState().report);
+const Report = () => {
+  
+  const report = useSelector(state => state.report)
+  const result = getRotatedResult(report);
     const rotations = getRotations(result);
+
     console.log(rotations)
     return (
       <Container>
@@ -31,6 +33,6 @@ class Report extends Component {
         </Link>
       </Container>
     )
-  }
+
 }
 export default Report;
