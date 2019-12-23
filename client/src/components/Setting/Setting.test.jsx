@@ -8,11 +8,11 @@ describe('<Setting />', () => {
 
   it("should render without throwing an error", () => {
     expect(
-        shallow(
-            <Provider store={store}>
-                <Setting />
-            </Provider>
-        ).exists()
+      shallow(
+        <Provider store={store}>
+          <Setting />
+        </Provider>
+      ).exists()
     ).toBe(true);
   });
 });

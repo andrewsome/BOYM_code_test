@@ -4,8 +4,8 @@ const initialState = {
   config: {},
 }
 
-export default function(state = initialState, action) {
-  switch(action.type) {
+export default function (state = initialState, action) {
+  switch (action.type) {
     case UPDATE_SETTINGS:
       return {
         ...state,

@@ -11,11 +11,11 @@ function App() {
   return (
     <Provider store={store}>
       <Router>
-          <Switch>
-            <Route path="/" exact component={Setting} />
-            <Route path="/generatereport" component={GenerateReport} />
-            <Route path="/report" component={Report} />
-          </Switch>
+        <Switch>
+          <Route path="/" exact component={Setting} />
+          <Route path="/generatereport" component={GenerateReport} />
+          <Route path="/report" component={Report} />
+        </Switch>
       </Router>
     </Provider>
   );

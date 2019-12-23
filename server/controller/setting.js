@@ -1,5 +1,3 @@
-const tempSetting = {};
+const temp_setting = {};
 
-const tempReport = {};
-
-module.exports = tempSetting, tempSetting;
+module.exports = temp_setting;

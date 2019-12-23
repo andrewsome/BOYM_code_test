@@ -1,4 +1,4 @@
-const tempSetting = require('./setting');
+const temp_setting = require('./setting');
 
 const update_setting = (req, res) => {
     const new_setting = {
@@ -7,7 +7,7 @@ const update_setting = (req, res) => {
       rotation_amount: req.body.rotation_amount,
     }
 
-    Object.assign(tempSetting, new_setting)
+    Object.assign(temp_setting, new_setting)
     res.send(req.body)
 }
 

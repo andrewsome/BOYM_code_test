@@ -14,6 +14,4 @@ describe('<GenerateReport />', () => {
       ).exists()
     ).toBe(true);
   });
-
-  
 });

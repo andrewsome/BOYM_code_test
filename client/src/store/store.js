@@ -7,8 +7,8 @@ const initialState = {};
 const middeleware = [thunk];
 
 export const store = createStore(
-  rootReducer, 
-  initialState, 
+  rootReducer,
+  initialState,
   compose(
     applyMiddleware(...middeleware)
   )

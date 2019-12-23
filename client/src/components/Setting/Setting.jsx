@@ -25,8 +25,8 @@ class Setting extends Component {
     this.setState({
       [name]: value,
     })
-  } 
-  
+  }
+
   onSubmit = (e) => {
     const { numberOfEggs, sequence, rotationAmount } = this.state;
     e.preventDefault();
@@ -40,7 +40,7 @@ class Setting extends Component {
       toNext: true
     });
   }
-  
+
   render() {
     if (this.state.toNext) {
       return <Redirect to="/generatereport" />
@@ -51,23 +51,23 @@ class Setting extends Component {
       <Container>
         <form onSubmit={this.onSubmit}>
           <label>Number of Eggs</label>
-          <input 
-            type="number" 
-            name="numberOfEggs" 
+          <input
+            type="number"
+            name="numberOfEggs"
             placeholder="5"
             value={this.state.numberOfEggs}
             onChange={this.onChange}
           />
           <label>Rotation Amount</label>
-          <input 
-            type="number" 
+          <input
+            type="number"
             name="rotationAmount"
             placeholder="0.25"
-            value={this.state.rotationAmount}         
+            value={this.state.rotationAmount}
             onChange={this.onChange}
           />
           <label>Sequence</label>
-          <textarea 
+          <textarea
             type="number"
             name="sequence"
             placeholder="1 3 5 2 4 4 4 4 2 1 3 4 7"
@@ -75,7 +75,7 @@ class Setting extends Component {
             onChange={this.onChange}
           />
           <br />
-           {/* //runing out time to do a better validation */}
+          {/* //runing out time to do a better validation */}
           <button disabled={!isEnabled} type="submit"> Save Setting</button>
 
         </form>
@@ -93,5 +93,5 @@ const mapStateToProps = state => ({
   settings: state.settings.config
 })
 
-export default connect(mapStateToProps, { updateSettings }) (Setting);
+export default connect(mapStateToProps, { updateSettings })(Setting);
 

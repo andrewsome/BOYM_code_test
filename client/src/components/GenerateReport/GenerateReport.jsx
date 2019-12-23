@@ -3,7 +3,7 @@ import Container from '../../Layout/Container';
 import { Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { createReports } from  '../../actions/createReportAction';
+import { createReports } from '../../actions/createReportAction';
 
 class GenerateReport extends Component {
   constructor(props) {
@@ -19,7 +19,7 @@ class GenerateReport extends Component {
 
   onSubmit = (e) => {
     e.preventDefault();
-     this.setState({
+    this.setState({
       toNext: true,
     })
   }
@@ -32,7 +32,7 @@ class GenerateReport extends Component {
       <Container>
         <form onSubmit={this.onSubmit}>
           setting saved
-          <br/>
+          <br />
           <button type="sumbit">Run</button>
         </form>
       </Container>

@@ -4,9 +4,9 @@ const initialState = {
   unfinishReports: {}
 }
 
-export default function(state = initialState, action) {
+export default function (state = initialState, action) {
 
-  switch(action.type) {
+  switch (action.type) {
     case GET_REPORT:
       return {
         ...state,

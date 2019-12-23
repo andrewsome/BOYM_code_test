@@ -1,11 +1,11 @@
-const tempSetting = require('./setting');
+const temp_setting = require('./setting');
 
 const create_report = (req, res) => {
-  if (!tempSetting) {
+  if (!temp_setting) {
     res.status(400).end();
     return;
   }
-  const report = tempSetting
+  const report = temp_setting
   res.send(report);
 }
 
