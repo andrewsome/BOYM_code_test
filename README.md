@@ -24,7 +24,7 @@ TO DO BETTER (if time availiable)
     
     try run the server first!
 
-3. `cd server` into server. run `npm init` set up environment. 
+3. `cd server` into server. run `npm install` set up environment. 
     to run the server side with nodemon by typing `npm run dev`,
     to run the server side without nodemon by typing `npm start`.
 
